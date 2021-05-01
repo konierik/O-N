@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/konierik/ontologies/untitled-ontology-16"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/konierik/ontologies/untitled-ontology-16">
+    <Prefix name="" IRI="http://www.semanticweb.org/konierik/ontologies/untitled-ontology-16#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Aunt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uncle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aunt_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#brother_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#father_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_brother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_father"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_mother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_sibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_sister"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_uncle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mother_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#parent_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sibling_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sister_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uncle_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Sex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uncle"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Parent"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#father_of"/>
+                <Class IRI="#Child"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#mother_of"/>
+                <Class IRI="#Child"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Aunt"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brother"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Father"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mother"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sister"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uncle"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uncle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_brother"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#father_of"/>
+                <Class IRI="#Child"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Child"/>
+        <NamedIndividual IRI="#Child"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Uncle"/>
+        <NamedIndividual IRI="#Uncle"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_father"/>
+        <NamedIndividual IRI="#Child"/>
+        <NamedIndividual IRI="#Father"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_brother"/>
+        <NamedIndividual IRI="#Father"/>
+        <NamedIndividual IRI="#Uncle"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#brother_of"/>
+        <ObjectProperty IRI="#sibling_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#father_of"/>
+        <ObjectProperty IRI="#parent_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_brother"/>
+        <ObjectProperty IRI="#has_sibling"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_sister"/>
+        <ObjectProperty IRI="#has_sibling"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#mother_of"/>
+        <ObjectProperty IRI="#parent_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#sister_of"/>
+        <ObjectProperty IRI="#sibling_of"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#brother_of"/>
+        <ObjectProperty IRI="#has_brother"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#father_of"/>
+        <ObjectProperty IRI="#has_father"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_sister"/>
+        <ObjectProperty IRI="#sister_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_uncle"/>
+        <ObjectProperty IRI="#uncle_of"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aunt_of"/>
+        <Class IRI="#Aunt"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#brother_of"/>
+        <Class IRI="#Brother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#father_of"/>
+        <Class IRI="#Father"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_father"/>
+        <Class IRI="#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_uncle"/>
+        <Class IRI="#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mother_of"/>
+        <Class IRI="#Mother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sibling_of"/>
+        <ObjectUnionOf>
+            <Class IRI="#Brother"/>
+            <Class IRI="#Sister"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sister_of"/>
+        <Class IRI="#Sister"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#uncle_of"/>
+        <Class IRI="#Uncle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#brother_of"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#father_of"/>
+        <Class IRI="#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_father"/>
+        <Class IRI="#Father"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_uncle"/>
+        <Class IRI="#Uncle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_uncle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_brother"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#father_of"/>
+                <Class IRI="#Child"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mother_of"/>
+        <Class IRI="#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sister_of"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#has_father"/>
+            <ObjectProperty IRI="#has_brother"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#has_uncle"/>
+    </SubObjectPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
