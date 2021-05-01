@@ -21,6 +21,7 @@
 	family:has_father :Father;
 	.
 :Father
+	a family:Father;
 	family:Name "Pops";
 	family:has_brother :Uncle;
 	.
