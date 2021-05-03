@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf"
+     xml:base="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#aunt_of -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#aunt_of">
+        <rdfs:domain rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Aunt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#brother_of -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#brother_of">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#sibling_of"/>
+        <owl:inverseOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_brother"/>
+        <rdfs:domain rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Brother"/>
+        <rdfs:range rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#father_of -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#father_of">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#parent_of"/>
+        <owl:inverseOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_father"/>
+        <rdfs:domain rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Father"/>
+        <rdfs:range rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Child"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_brother -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_brother">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_sibling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_father -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_father">
+        <rdfs:domain rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Child"/>
+        <rdfs:range rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Father"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_mother -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_mother"/>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_sibling -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_sibling"/>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_sister -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_sister">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_sibling"/>
+        <owl:inverseOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#sister_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_uncle -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_uncle">
+        <owl:inverseOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#uncle_of"/>
+        <rdfs:domain rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Child"/>
+        <rdfs:range rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Uncle"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_brother"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#father_of"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Child"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:range>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_father"/>
+            <rdf:Description rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_brother"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#mother_of -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#mother_of">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#parent_of"/>
+        <rdfs:domain rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Mother"/>
+        <rdfs:range rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Child"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#parent_of -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#parent_of"/>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#sibling_of -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#sibling_of">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Brother"/>
+                    <rdf:Description rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Sister"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#sister_of -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#sister_of">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#sibling_of"/>
+        <rdfs:domain rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Sister"/>
+        <rdfs:range rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#uncle_of -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#uncle_of">
+        <rdfs:domain rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Uncle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Name -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Name"/>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Sex -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Sex"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Aunt -->
+
+    <owl:Class rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Aunt">
+        <rdfs:subClassOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Brother -->
+
+    <owl:Class rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Brother">
+        <rdfs:subClassOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Child -->
+
+    <owl:Class rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Child">
+        <rdfs:subClassOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Father -->
+
+    <owl:Class rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Father">
+        <rdfs:subClassOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Mother -->
+
+    <owl:Class rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Mother">
+        <rdfs:subClassOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Parent -->
+
+    <owl:Class rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Parent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#father_of"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Child"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#mother_of"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Child"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person -->
+
+    <owl:Class rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Sister -->
+
+    <owl:Class rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Sister">
+        <rdfs:subClassOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Uncle -->
+
+    <owl:Class rdf:about="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Uncle">
+        <rdfs:subClassOf rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#has_brother"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#father_of"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#Child"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
