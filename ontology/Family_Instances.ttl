@@ -5,10 +5,10 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix family: <https://github.com/konierik/O-N/raw/master/ontology/Family2.owl#>.
+@prefix family: <https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf#>.
 
 <https://github.com/konierik/O-N/raw/master/ontology/Family_Instances.ttl>
-                                                                       owl:imports <https://github.com/konierik/O-N/raw/master/ontology/Family2.owl> .
+                                                                       owl:imports <https://github.com/konierik/O-N/raw/master/ontology/Family2.rdf> .
 
 
 #################################################################
