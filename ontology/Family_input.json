@@ -1,6 +1,6 @@
 {
 	"data":{
-		"Person":{
+		"Person":[
 
 			{
 				"Name":"Sohn",
@@ -45,6 +45,6 @@
 				"Child":"",
 				"Uncle":""
 			}
-		}	
+		]	
 	}
 }
