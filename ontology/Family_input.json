@@ -1,25 +1,27 @@
 {
 	"data":{
-		"Person":[
-			{
-				"Name":"Sohn",
-				"Type":"Child",
-				"ID":"K1",
-				"Brother":"",
-				"Father":"V1",
-				"Child":"",
-				"Uncle":"U1"
-			},
-			{
-				"Name":"Tochter",
-				"Type":"Child",
-				"ID":"K2",
-				"Brother":"",
-				"Father":"V1",
-				"Child":"",
-				"Uncle":""
-			},
-			{
+		"Person":{
+			"Child":[
+				{
+					"Name":"Sohn",
+					"Type":"Child",
+					"ID":"K1",
+					"Brother":"",
+					"Father":"V1",
+					"Child":"",
+					"Uncle":"U1"
+				},
+				{
+					"Name":"Tochter",
+					"Type":"Child",
+					"ID":"K2",
+					"Brother":"",
+					"Father":"V1",
+					"Child":"",
+					"Uncle":""
+				}
+			],
+			"Father":{
 				"Name":"Vater",
 				"Type":"Father",
 				"ID":"V1",
@@ -35,7 +37,8 @@
 				],
 				"Uncle":""
 			},
-			{
+				
+			"Uncle":{
 				"Name":"Onkel",
 				"Type":"Uncle",
 				"ID":"O1",
@@ -44,6 +47,6 @@
 				"Child":"",
 				"Uncle":""
 			}
-		]
+		}	
 	}
 }
