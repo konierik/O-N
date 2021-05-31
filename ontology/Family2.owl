@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/konierik/O-N/raw/master/ontology/Family2.owl"
+     xml:base="https://github.com/konierik/O-N/raw/master/ontology/Family.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://github.com/konierik/O-N/raw/master/ontology/Family2.owl">
-    <Prefix name="" IRI="https://github.com/konierik/O-N/raw/master/ontology/Family2.owl"/>
+     ontologyIRI="https://github.com/konierik/O-N/raw/master/ontology/Family.owl">
+    <Prefix name="" IRI="https://github.com/konierik/O-N/raw/master/ontology/Family.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -95,6 +95,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#datapropertymapping"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#identifier"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#objectpropertymapping"/>
@@ -292,9 +295,19 @@
         <Literal>/data/Person/Aunt</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#identifier"/>
+        <IRI>#Aunt</IRI>
+        <Literal>/data/Person/ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#classmapping"/>
         <IRI>#Brother</IRI>
         <Literal>/data/Person/Brother</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#identifier"/>
+        <IRI>#Brother</IRI>
+        <Literal>/data/Person/ID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#classmapping"/>
@@ -302,9 +315,19 @@
         <Literal>/data/Person/Child</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#identifier"/>
+        <IRI>#Child</IRI>
+        <Literal>/data/Person/ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#classmapping"/>
         <IRI>#Father</IRI>
         <Literal>/data/Person/Father</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#identifier"/>
+        <IRI>#Father</IRI>
+        <Literal>/data/Person/ID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#datapropertymapping"/>
@@ -317,6 +340,11 @@
         <Literal>/data/Person/Mother</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#identifier"/>
+        <IRI>#Mother</IRI>
+        <Literal>/data/Person/ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#datapropertymapping"/>
         <IRI>#Name</IRI>
         <Literal>/data/Person/Name</Literal>
@@ -327,14 +355,29 @@
         <Literal>/data/Person/Parent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#identifier"/>
+        <IRI>#Parent</IRI>
+        <Literal>/data/Person/ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#classmapping"/>
         <IRI>#Person</IRI>
         <Literal>/data/Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#identifier"/>
+        <IRI>#Person</IRI>
+        <Literal>/data/Person/ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#classmapping"/>
         <IRI>#Sister</IRI>
         <Literal>/data/Person/Sister</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#identifier"/>
+        <IRI>#Sister</IRI>
+        <Literal>/data/Person/ID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#datapropertymapping"/>
@@ -345,6 +388,26 @@
         <AnnotationProperty IRI="#classmapping"/>
         <IRI>#Uncle</IRI>
         <Literal>/data/Person/Uncle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#identifier"/>
+        <IRI>#Uncle</IRI>
+        <Literal>/data/Person/ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#aunt_of</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#brother_of</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#father_of</IRI>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#objectpropertymapping"/>
@@ -358,13 +421,48 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#has_mother</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#has_sibling</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#has_sister</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
         <IRI>#has_uncle</IRI>
         <Literal>/data/Person/Uncle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#mother_of</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
         <IRI>#parent_of</IRI>
         <Literal>/data/Person/Child</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#sibling_of</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#sister_of</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#uncle_of</IRI>
+        <Literal></Literal>
     </AnnotationAssertion>
 </Ontology>
 
