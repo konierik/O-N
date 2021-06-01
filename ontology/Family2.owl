@@ -302,7 +302,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="#classmapping"/>
         <IRI>#Brother</IRI>
-        <Literal>/data/Person/Brother</Literal>
+        <Literal>/data/Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#identifier"/>
@@ -312,7 +312,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="#classmapping"/>
         <IRI>#Child</IRI>
-        <Literal>/data/Person/Child</Literal>
+        <Literal>/data/Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#identifier"/>
@@ -322,7 +322,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="#classmapping"/>
         <IRI>#Father</IRI>
-        <Literal>/data/Person/Father</Literal>
+        <Literal>/data/Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#identifier"/>
@@ -387,7 +387,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="#classmapping"/>
         <IRI>#Uncle</IRI>
-        <Literal>/data/Person/Uncle</Literal>
+        <Literal>/data/Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#identifier"/>
