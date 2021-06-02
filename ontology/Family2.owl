@@ -218,6 +218,10 @@
         <Class IRI="#Child"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_father"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_mother"/>
         <Class IRI="#Child"/>
     </ObjectPropertyDomain>
