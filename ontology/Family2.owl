@@ -231,7 +231,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_uncle"/>
-        <Class IRI="#Child"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#mother_of"/>
