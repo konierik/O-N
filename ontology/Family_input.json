@@ -40,7 +40,7 @@
 				"Name":"Onkel",
 				"Type":"Uncle",
 				"ID":"O1",
-				"Brother":"F1",
+				"Brother":"V1",
 				"Father":"",
 				"Child":"",
 				"Uncle":""
