@@ -210,8 +210,24 @@
         <Class IRI="#Father"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_brother"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_father"/>
         <Class IRI="#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_mother"/>
+        <Class IRI="#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_sibling"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_sister"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_uncle"/>
@@ -220,6 +236,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#mother_of"/>
         <Class IRI="#Mother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#parent_of"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#sibling_of"/>
@@ -237,6 +257,10 @@
         <Class IRI="#Uncle"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#aunt_of"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#brother_of"/>
         <Class IRI="#Person"/>
     </ObjectPropertyRange>
@@ -245,8 +269,24 @@
         <Class IRI="#Child"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_brother"/>
+        <Class IRI="#Brother"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#has_father"/>
         <Class IRI="#Father"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_mother"/>
+        <Class IRI="#Mother"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_sibling"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_sister"/>
+        <Class IRI="#Sister"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_uncle"/>
@@ -264,6 +304,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#mother_of"/>
+        <Class IRI="#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#parent_of"/>
         <Class IRI="#Child"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
