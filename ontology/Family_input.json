@@ -9,7 +9,7 @@
 				"Brother":"",
 				"Father":"V1",
 				"Child":"",
-				"Uncle":"U1"
+				"Uncle":"O1"
 			},
 			{
 				"Name":"Tochter",
@@ -24,7 +24,7 @@
 				"Name":"Vater",
 				"Type":"Father",
 				"ID":"V1",
-				"Brother":"U1",
+				"Brother":"O1",
 				"Father":"",
 				"Child":[
 					{
