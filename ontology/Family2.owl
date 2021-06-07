@@ -321,6 +321,13 @@
         </ObjectPropertyChain>
         <ObjectProperty IRI="#has_uncle"/>
     </SubObjectPropertyOf>
+        <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#has_father"/>
+            <ObjectProperty IRI="#brother_of"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#has_uncle"/>
+    </SubObjectPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#ID"/>
         <Class IRI="#Person"/>
