@@ -1,7 +1,6 @@
 <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.github.com/konierik/O-N/raw/master/ontology/Family2.owl#Person>.
 <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda> <https://www.github.com/konierik/O-N/raw/master/ontology/Family2.owl#Name> "Rolanda".
 <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda> <https://www.github.com/konierik/O-N/raw/master/ontology/Family2.owl#ID> "R1".
-
 <https://www.github.com/konierik/O-N/ontology/mater/raw/NTInstances.ttl#Rudi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.github.com/konierik/O-N/ontology/mater/raw/Family2.owl#Person>.
 <https://www.github.com/konierik/O-N/ontology/mater/raw/NTInstances.ttl#Roudi> <https://www.github.com/konierik/O-N/ontology/mater/raw/Family2.owl#Name> "Rudi".
 <https://www.github.com/konierik/O-N/ontology/mater/raw/NTInstances.ttl#Rudi> <https://www.github.com/konierik/O-N/ontology/mater/raw/Family2.owl#ID> "R2".
