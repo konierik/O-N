@@ -6,3 +6,5 @@
 
 <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda> <https://www.github.com/konierik/O-N/raw/master/ontology/Family2.owl#ID> "R1".
 <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rudi> <https://www.github.com/konierik/O-N/raw/master/ontology/Family2.owl#ID> "R2".
+
+<https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rudi> <https://www.github.com/konierik/O-N/raw/master/ontology/Family2.owl#has_father> <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda>.
