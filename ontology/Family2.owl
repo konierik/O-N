@@ -320,7 +320,7 @@
             <ObjectProperty IRI="#has_brother"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#has_uncle"/>
-        <ObjectPropertyChain>
+		<ObjectPropertyChain>
             <ObjectProperty IRI="#has_father"/>
             <ObjectProperty IRI="#brother_of"/>
         </ObjectPropertyChain>
