@@ -450,6 +450,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#aunt_of</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#brother_of</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
+        <IRI>#father_of</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#objectpropertymapping"/>
         <IRI>#has_brother</IRI>
         <Literal>/data/Person/Brother</Literal>
     </AnnotationAssertion>
