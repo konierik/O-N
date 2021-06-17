@@ -6,43 +6,28 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix family: <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#> .
 
-#<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#ID>
-#        a       owl:DatatypeProperty .
+:Rudi   a                   family:Person ;
+        family:ID           "R2" ;
+        family:Name         "Rudi" ;
+        family:has_brother  :Ray .
 
-<https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rudi>
-        a       <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Person> ;
-        <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#ID>
-                "R2" ;
-        <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Name>
-                "Rudi" ;
-        <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#has_brother>
-                <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Ray> .
+family:ID  a    owl:DatatypeProperty .
 
-#<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Name>
-#        a       owl:DatatypeProperty .
+family:Name  a  owl:DatatypeProperty .
 
-<https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda>
-        a       <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Person> ;
-        <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#ID>
-                "R1" ;
-        <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Name>
-                "Rolanda" ;
-        <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#has_father>
-                <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rudi> .
+:Ray    a            family:Person ;
+        family:ID    "R3" ;
+        family:Name  "Ray" .
 
-<https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Ray>
-        a       <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Person> ;
-        <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#ID>
-                "R3" ;
-        <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Name>
-                "Ray" .
+:Rolanda  a                family:Person ;
+        family:ID          "R1" ;
+        family:Name        "Rolanda" ;
+        family:has_father  :Rudi .
 
-#<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#has_father>
-#        a       owl:ObjectProperty .
-		
-#<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#has_brother>
-#        a       owl:ObjectProperty .
+family:has_brother  a  owl:ObjectProperty .
 
 <NTInstancesProperties.ttl>
         a            owl:Ontology ;
         owl:imports  <Family.owl> .
+
+family:has_father  a  owl:ObjectProperty .
