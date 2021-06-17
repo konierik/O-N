@@ -6,8 +6,8 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix family: <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#> .
 
-<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#ID>
-        a       owl:DatatypeProperty .
+#<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#ID>
+#        a       owl:DatatypeProperty .
 
 <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rudi>
         a       <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Person> ;
@@ -18,8 +18,8 @@
         <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#has_brother>
                 <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Ray> .
 
-<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Name>
-        a       owl:DatatypeProperty .
+#<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Name>
+#        a       owl:DatatypeProperty .
 
 <https://www.github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda>
         a       <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Person> ;
@@ -37,11 +37,11 @@
         <https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#Name>
                 "Ray" .
 
-<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#has_father>
-        a       owl:ObjectProperty .
+#<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#has_father>
+#        a       owl:ObjectProperty .
 		
-<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#has_brother>
-        a       owl:ObjectProperty .
+#<https://www.github.com/konierik/O-N/raw/master/ontology/Family.owl#has_brother>
+#        a       owl:ObjectProperty .
 
 <NTInstancesProperties.ttl>
         a            owl:Ontology ;
