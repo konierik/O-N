@@ -10,10 +10,6 @@
 
 
 
-<https://github.com/konierik/O-N/raw/master/ontology/Family_Instances.ttl>
-                                                                       owl:imports <https://github.com/konierik/O-N/raw/master/ontology/Family2.owl> .
-
-
 #################################################################
 #    Individuals
 #################################################################
