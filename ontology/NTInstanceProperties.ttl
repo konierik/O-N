@@ -4,7 +4,7 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix family: <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#> .
+@prefix family: <https://github.com/konierik/O-N/raw/master/ontology/Family2.owl#> .
 
 :Rudi   a                   family:Person ;
         family:ID           "R2" ;
