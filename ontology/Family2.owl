@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/konierik/O-N/raw/master/ontology/Family2.owl"
+     xml:base="https://github.com/konierik/O-N/raw/master/ontology/Family2"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -157,6 +157,24 @@
             </ObjectSomeValuesFrom>
         </ObjectSomeValuesFrom>
     </SubClassOf>
+	   <ClassAssertion>
+        <Class IRI="#Child"/>
+        <NamedIndividual IRI="#Child"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Uncle"/>
+        <NamedIndividual IRI="#Uncle"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_father"/>
+        <NamedIndividual IRI="#Child"/>
+        <NamedIndividual IRI="#Father"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_brother"/>
+        <NamedIndividual IRI="#Father"/>
+        <NamedIndividual IRI="#Uncle"/>
+    </ObjectPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#brother_of"/>
         <ObjectProperty IRI="#sibling_of"/>
