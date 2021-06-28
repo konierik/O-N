@@ -5,13 +5,41 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://github.com/konierik/O-N/raw/master/ontology/Family2.owl">
-    <Prefix name="" IRI="https://github.com/konierik/O-N/raw/master/ontology/Family2.owl"/>
+     ontologyIRI="https://github.com/konierik/O-N/raw/master/ontology/Family2">
+    <Prefix name="" IRI="https://github.com/konierik/O-N/raw/master/ontology/Family2.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://github.com/konierik/O-N/raw/master/ontology/NTInstanceProperties.ttl</Import>
+    <Declaration>
+        <Class IRI="#Aunt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uncle"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#Aunt"/>
     </Declaration>
@@ -82,13 +110,88 @@
         <ObjectProperty IRI="#uncle_of"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#aunt_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#brother_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#father_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_brother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_father"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_mother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_sibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_sister"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_uncle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mother_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#parent_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sibling_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sister_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uncle_of"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#ID"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Name"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Type"/>
+        <DataProperty IRI="#Sex"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Sex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uncle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uncle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Ray"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rudi"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#classmapping"/>
@@ -157,7 +260,7 @@
             </ObjectSomeValuesFrom>
         </ObjectSomeValuesFrom>
     </SubClassOf>
-	   <ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Child"/>
         <NamedIndividual IRI="#Child"/>
     </ClassAssertion>
@@ -228,36 +331,16 @@
         <Class IRI="#Father"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_brother"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_father"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_mother"/>
         <Class IRI="#Child"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_sibling"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_sister"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_uncle"/>
-        <Class IRI="#Person"/>
+        <Class IRI="#Child"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#mother_of"/>
         <Class IRI="#Mother"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#parent_of"/>
-        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#sibling_of"/>
@@ -275,10 +358,6 @@
         <Class IRI="#Uncle"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#aunt_of"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#brother_of"/>
         <Class IRI="#Person"/>
     </ObjectPropertyRange>
@@ -287,24 +366,8 @@
         <Class IRI="#Child"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_brother"/>
-        <Class IRI="#Brother"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#has_father"/>
         <Class IRI="#Father"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_mother"/>
-        <Class IRI="#Mother"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_sibling"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_sister"/>
-        <Class IRI="#Sister"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_uncle"/>
@@ -325,10 +388,6 @@
         <Class IRI="#Child"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#parent_of"/>
-        <Class IRI="#Child"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#sister_of"/>
         <Class IRI="#Person"/>
     </ObjectPropertyRange>
@@ -338,24 +397,7 @@
             <ObjectProperty IRI="#has_brother"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#has_uncle"/>
-		<ObjectPropertyChain>
-            <ObjectProperty IRI="#has_father"/>
-            <ObjectProperty IRI="#brother_of"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="#has_uncle"/>
     </SubObjectPropertyOf>
-    <DataPropertyDomain>
-        <DataProperty IRI="#ID"/>
-        <Class IRI="#Person"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Name"/>
-        <Class IRI="#Person"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Type"/>
-        <Class IRI="#Person"/>
-    </DataPropertyDomain>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#classmapping"/>
         <IRI>#Aunt</IRI>
