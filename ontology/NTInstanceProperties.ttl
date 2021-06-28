@@ -28,6 +28,6 @@ family:has_brother  a  owl:ObjectProperty .
 
 <NTInstancesProperties.ttl>
         a            owl:Ontology ;
-        owl:imports  <Family2.o> .
+        owl:imports  <Family2.owl> .
 
 family:has_father  a  owl:ObjectProperty .
