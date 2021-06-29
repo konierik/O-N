@@ -17,3 +17,23 @@
 
 <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#has_brother> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty>.
 <https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rudi> <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#has_brother> <https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Ray>.
+
+
+
+
+
+
+
+<https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#Person>.
+<https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rudi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#Person>.
+<https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Ray> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#Person>.
+
+<https://github.com/konierik/O-N/raw/master/ontology/Family.owl#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty>.
+<https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda> <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#Name> "Rolanda".
+<https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rudi> <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#Name> "Rudi".
+<https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Ray> <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#Name> "Ray".
+
+<https://github.com/konierik/O-N/raw/master/ontology/Family.owl#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty>.
+<https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rolanda> <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#ID> "R1".
+<https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Rudi> <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#ID> "R2".
+<https://github.com/konierik/O-N/raw/master/ontology/NTInstances.ttl#Ray> <https://github.com/konierik/O-N/raw/master/ontology/Family.owl#ID> "R3".
